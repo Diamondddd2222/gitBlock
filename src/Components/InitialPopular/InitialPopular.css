@@ -1,0 +1,13 @@
+.popular-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.popularText-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 120px;
+}
+
