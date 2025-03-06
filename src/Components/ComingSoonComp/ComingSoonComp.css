@@ -1,0 +1,116 @@
+.comingSoon-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 20);
+}
+
+.comingSoonText-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 120px 5px 120px;
+}
+
+.comingSoon-Text{
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+}
+
+.comingSoon-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 120px;
+    margin-top: 0;
+}
+
+.comingSoon-img-section-path{
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+
+.comingSoonMovie{
+    position: relative;
+}
+
+.comingSoon-watchlist-button{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    left: 50px;
+    margin-top: -220px;
+    background-color:  rgb(226, 21, 55);
+    color: white;
+    padding: 10px;                                                                              
+    border: none;
+    outline: none;
+}
+
+.comingSoon-view-button{
+    position: absolute;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    left: 50px;
+    margin-top: -175px;
+    background-color:  rgb(226, 21, 55);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+}
+
+.comingSoon-movie-title{
+    color: white;
+    position: absolute;
+    left: 4px;
+    background-color: black;
+    padding: 0px 15px;
+    top: 210px;
+    font-size: .9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 170px;
+}
+
+.comingSoon-movie-rating{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    position: absolute;
+    left: 4px;
+    top: 240px;
+    background-color: black;
+    padding: 0px 15px;
+    font-size: .7rem;
+}
+
+
+.comingSoon-info{
+    display: none;
+}
+
+.comingSoonMovie:hover .comingSoon-info{
+    display: block;
+}
+
+.comingSoon-watchlist-button:hover{
+    color: black;
+}
+.comingSoon-view-button:hover{
+    color: black;
+}
+
+.comingSoonMovie:hover .comingSoon-movie-title{
+    color: yellow;
+    width: 190px;
+}

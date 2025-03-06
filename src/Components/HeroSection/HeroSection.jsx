@@ -52,7 +52,7 @@ const HeroSection = () => {
         <SliderButton/>
                {
                   movies.map((movie, i) =>(
-                    <div className="M-container">
+                    <div className="M-container" key={movie?.id}>
                     <SwiperSlide key={movie?.id}>
                       <div className="movie-container">
 

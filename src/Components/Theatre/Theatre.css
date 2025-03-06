@@ -1,0 +1,50 @@
+.theater-content{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 20);
+}
+
+.theater-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 120px 5px 120px;
+}
+
+.theater-Text{
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+}
+
+.theater-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 120px;
+    margin-top: 0;
+}
+
+.movieList-Text {
+    overflow: visible !important;
+    height: 50px;
+    width: 400px;
+    display: fex;
+    flex-direction: olumn;
+}
+
+.Theatremovie-Text{
+    font-size: 1rem; 
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+    color: white;
+}
+
+
+.slider{
+    width: 350px;
+    height: 200px;
+}
