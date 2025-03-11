@@ -9,21 +9,22 @@ import "slick-carousel/slick/slick-theme.css"
 
 
 
-const Theatre = () => {
+const Theatre = ({VideoId}) => {
   const defaultMovie = movieTrailers[0]
  
-  const [trailerUrl, setTrailerUrl] = useState(`https://www.youtube.com/watch?v=${defaultMovie.VideoId}`)
+  const [trailerUrl, setTrailerUrl] = useState(defaultMovie?.VideoId?`https://www.youtube.com/embed/${defaultMovie.VideoId}` : "")
 
 
  // function to generate youtube search url
 const generateYouTubeLink = (VideoId) => {
-  return `https://www.youtube.com/watch?v=${VideoId}`
+  return `https://www.youtube.com/embed/${VideoId}`
 }
 
 // function to update ReactPlayer
 const playTrailer= (VideoId)  =>{
   setTrailerUrl(generateYouTubeLink(VideoId));
 }
+
 
 const settings = {
   vertical:true,
@@ -34,6 +35,7 @@ const settings = {
   autoplay: false,
 }
 
+
   return (
    
     <div className='theater-content'>
@@ -43,12 +45,14 @@ const settings = {
       </div>
 
       <div className="theater-section">
-        {trailerUrl && <ReactPlayer 
-                        controls
-                        url={trailerUrl}
-                        width="60%"
-                        height='350PX'
-                        playing={true}
+        {trailerUrl && <iframe
+                         width="60%"
+                         height='350px' 
+                         src={trailerUrl}
+                         title='Youtube video player'
+                         frameBorder="1"
+                         allow='accelerometer; autoplay; clipboard-write; encryted-media; gyroscope; picture-in-picture'
+                         allowFullScreen
                        />}
 
        <div className="movieList-Text">
