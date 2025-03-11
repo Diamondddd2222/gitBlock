@@ -1,6 +1,4 @@
 import React, { useEffect, useState} from 'react'
-import { data, useParams } from 'react-router-dom';
-import ReactPlayer from 'react-player'
 import { movieTrailers  } from '../../utils/data'
 import './Theatre.css'
 import Slider from 'react-slick';
