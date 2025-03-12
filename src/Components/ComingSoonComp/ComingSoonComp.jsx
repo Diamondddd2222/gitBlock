@@ -19,6 +19,17 @@ const ComingSoonComp = () => {
     }, []);
 
 
+           // Generate link for Movie trailer 
+   const playTrailer = ({original_title}) => {
+    if (!original_title){
+      console.error("No title found for this movie.")
+      return;
+    }
+      const query = encodeURIComponent(`${original_title} official trailer`);
+      const youtubeUrl = `https://www.youtube.com/results?search_query=${query}`;
+      window.open(youtubeUrl, "_blank");
+   }  
+
     return (
         <div className='comingSoon-container'>
           <div className='comingSoonText-container'>
@@ -32,7 +43,7 @@ const ComingSoonComp = () => {
                <img src={`${IMAGE_BASE_URL}${movie.poster_path}`} alt="" className='comingSoon-img-section-path' />
                <div className="comingSoon-info">
                  <button className='comingSoon-watchlist-button'><FaPlus size={8}/>WatchList</button>
-                 <button className='comingSoon-view-button'><FaRegEye size={10}/>  View</button>
+                 <button onClick={()=> playTrailer(movie)} className='comingSoon-view-button'><FaRegEye size={10}/>  View</button>
                </div>
     
                <div className="comingSoon-ratings">

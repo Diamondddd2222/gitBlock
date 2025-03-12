@@ -1,0 +1,173 @@
+.MoreDetails-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 120px 5px 120px;
+    background-color: rgb(0, 0, 20);
+}
+
+.MoreDetails-container{
+    display: flex;
+    gap: 100px;
+}
+
+.MoreDetails-imagesection{
+    display: flex;
+    flex-direction: column;
+    width:29%;
+    height: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.61);
+    border-radius: 10px;
+}
+
+.moreDetail-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.moreDetail-button .watchTrailer{
+    font-size: 15px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(226, 21, 55);
+}
+
+.moreDetail-button .buyTicket{
+    font-size: 15px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: yellow;
+}
+
+
+
+.moreDetais-img-section-path{ 
+    width: 320px;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.moreDetais-img-backdrop-path{ 
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.moreDetails-movieTitle{
+    color: white;
+    padding-bottom: 40px;
+    font-size: 3.5rem;
+}
+
+.moreDetails-movieReleasedate{
+    color: rgba(255, 255, 255, 0.521);
+   
+}
+
+.shareButtons{
+    display: flex;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.heart{
+    background-color: transparent;
+    border: 1px solid rgb(226, 21, 55);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+
+.shareButtons-Heart{
+   display: flex;
+   align-items: center ;
+   gap: 10px;
+}
+
+.shareButtons-share{
+    display: flex;
+    align-items: center ;
+    gap: 10px;
+ }
+
+.text-watchList{
+    font-weight: 200;
+    font-size: 1rem;
+    color: rgb(226, 21, 55);
+}
+
+.text-share{
+    color: rgb(226, 21, 55);
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.ratingsMovie{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-top: 25px;
+}
+
+.rate-text{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.562);
+    font-weight: 200;
+}
+
+.MovieDetails-movie-rating{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    font-weight: 200;
+}
+.ratings{
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+
+.movieIMG{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.overview-text{
+    color: grey;
+    padding-top: 20px;
+    line-height: 1.5rem;
+}
+
+.LikeMovie-container{
+    margin: 80px 0 60px 0;
+}
+
+.LikeMovie-section{
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}

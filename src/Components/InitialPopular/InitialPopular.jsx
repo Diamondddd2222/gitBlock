@@ -19,6 +19,20 @@ useEffect(()=>{
         .then((data)=> setMovies(data.results.slice(0, 5)))
 
     }, []);
+  
+
+     // Generate link for Movie trailer 
+   const playTrailer = ({original_title}) => {
+    if (!original_title){
+      console.error("No title found for this movie.")
+      return;
+    }
+      const query = encodeURIComponent(`${original_title} official trailer`);
+      const youtubeUrl = `https://www.youtube.com/results?search_query=${query}`;
+      window.open(youtubeUrl, "_blank");
+   }
+
+
 
 
     return (
@@ -34,7 +48,7 @@ useEffect(()=>{
              <img src={`${IMAGE_BASE_URL}${movie.poster_path}`} alt="" className='Popular-img-section-path' />
              <div className="Popular-movie-info">
                <button className='Popular-watchlist-button'><FaPlus size={8}/>WatchList</button>
-               <button className='Popular-view-button'><FaRegEye size={10}/>  View</button>
+               <button onClick={()=> playTrailer(movie)} className='Popular-view-button'><FaRegEye size={10} />  View</button>
              </div>
   
              <div className="Popular-movie-ratings">

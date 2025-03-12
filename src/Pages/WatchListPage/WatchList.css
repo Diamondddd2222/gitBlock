@@ -1,0 +1,45 @@
+  .watchList-container{
+    background-color: rgb(0, 0, 20);
+    padding: 30px 120px 5px 120px;
+  }
+
+  .WatchListPage-img-section-path{
+    position: relative;
+    width: 170px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .watchlistPage-buttons{
+    position: absolute;
+    top: 280px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 25px;
+  }
+
+  .WatchListPage-button{
+    background-color:  rgb(226, 21, 55);
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+
+  .WatchListPage-button2{
+    background-color:  rgb(226, 21, 55);
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+
+  .WatchListPage-button2:hover{
+    color: black;
+  }
+  .WatchListPage-button:hover{
+    color: black;
+  }

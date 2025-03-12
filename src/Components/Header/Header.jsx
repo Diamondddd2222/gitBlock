@@ -9,7 +9,7 @@ const Header = () => {
        <div className="logo-container">
 
         <div className="logo-text">
-          <MdLocalMovies size={65} className='logo'/>
+          <MdLocalMovies  className='logo'/>
 
           <div className="LT">
            <div className="logo-texts">

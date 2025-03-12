@@ -416,3 +416,16 @@
     color: yellow;
     width: 190px;
 }
+
+/*Media query*/
+@media screen and (max-width:1320px){
+   
+
+    .popular-container{
+        padding: 30px 50px ;
+        color: black;
+    }
+
+    
+}
+

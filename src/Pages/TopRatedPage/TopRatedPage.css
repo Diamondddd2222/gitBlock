@@ -1,0 +1,530 @@
+.topMovie-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 20);
+
+}
+
+.TopMovieText-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 120px 5px 120px;
+}
+
+.TopMovie-Text{
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+}
+
+.TopRated-navigator{
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.section-Topmovie{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 30px 120px;
+    margin-top: 0;
+}
+
+
+
+
+/*Fisrt letter styles*/
+.Topimg-section-path{
+    position: relative;
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+
+.first-Topmovie-title{
+    color: white;
+    position: absolute;
+    left: 120px;
+    margin-top: 210px;
+    background-color: black;
+    padding: 0px 8px;
+    font-size: .9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+
+.first-Topmovie-rating{
+    color: white;
+    position: absolute;
+    left: 140px;
+    margin-top: 240px;
+    background-color: black;
+    padding: 0px 15px;
+    font-size: .7rem;
+}
+
+
+.first-Topwatchlist-button{
+    position: absolute;
+    display: none;
+    left: 170px;
+    margin-top: -230px;
+    background-color:  rgb(226, 21, 55);
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    transition: opacity 0.5s ease;
+}
+
+
+.first-Topview-button{
+    position: absolute;
+    display: none;
+    left: 170px;
+    margin-top: -185px;
+    background-color:  rgb(226, 21, 55);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+}
+
+.first-Topmovie:hover .first-Topwatchlist-button {
+    display: block;
+}
+
+.first-Topwatchlist-button:hover{
+    color: black;
+}
+.first-Topview-button:hover{
+    color: black;
+}
+.first-Topmovie:hover .first-Topview-button{
+    display: block;
+}
+.first-Topmovie:hover .first-Topmovie-title{
+    color: yellow;
+}
+
+
+/*Second leter styles*/
+.second-Topimg-section-path{
+    position: relative;
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.second-Topmovie-title{
+    color: white;
+    position: absolute;
+    left: 350px;
+    margin-top: 210px;
+    background-color: black;
+    padding: 0px 8px;
+    font-size: .9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.second-Topmovie-rating{
+    color: white;
+    position: absolute;
+    left: 350px;
+    margin-top: 240px;
+    background-color: black;
+    padding: 0px 15px;
+    font-size: .7rem;
+}
+
+
+.second-Topwatchlist-button{
+    position: absolute;
+    display: none;
+    left: 400px;
+    margin-top: -230px;
+    background-color:  rgb(226, 21, 55);
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    transition: opacity 0.5s ease;
+}
+
+
+.second-Topview-button{
+    position: absolute;
+    display: none;
+    left: 400px;
+    margin-top: -185px;
+    background-color:  rgb(226, 21, 55);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+}
+
+.second-Topmovie:hover .second-Topwatchlist-button {
+    display: block;
+}
+
+.second-Topwatchlist-button:hover{
+    color: black;
+}
+.second-Topview-button:hover{
+    color: black;
+}
+.second-Topmovie:hover .second-Topview-button{
+    display: block;
+}
+.second-Topmovie:hover .second-Topmovie-title{
+    color: yellow;
+}
+
+
+/*Third letter styles*/
+
+.third-Topimg-section-path{
+    position: relative;
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.third-Topmovie-title{
+    color: white;
+    position: absolute;
+    left: 600px;
+    margin-top: 210px;
+    background-color: black;
+    padding: 0px 8px;
+    font-size: .9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.third-Topmovie-rating{
+    color: white;
+    position: absolute;
+    left: 600px;
+    margin-top: 240px;
+    background-color: black;
+    padding: 0px 15px;
+    font-size: .7rem;
+}
+
+
+.third-Topwatchlist-button{
+    position: absolute;
+    display: none;
+    left: 630px;
+    margin-top: -230px;
+    background-color:  rgb(226, 21, 55);
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    transition: opacity 0.5s ease;
+}
+
+
+.third-Topview-button{
+    position: absolute;
+    display: none;
+    left: 630px;
+    margin-top: -185px;
+    background-color:  rgb(226, 21, 55);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+}
+
+.third-Topmovie:hover .third-Topwatchlist-button {
+    display: block;
+}
+
+.third-Topwatchlist-button:hover{
+    color: black;
+}
+.third-Topview-button:hover{
+    color: black;
+}
+.third-Topmovie:hover .third-Topview-button{
+    display: block;
+}
+.third-Topmovie:hover .third-Topmovie-title{
+    color: yellow;
+}
+
+
+/*forth letter styles*/
+
+.forth-Topimg-section-path{
+    position: relative;
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.forth-Topmovie-title{
+    color: white;
+    position: absolute;
+    left: 820px;
+    margin-top: 210px;
+    background-color: black;
+    padding: 0px 8px;
+    font-size: .9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   
+}
+
+.forth-Topmovie-rating{
+    color: white;
+    position: absolute;
+    left: 820px;
+    margin-top: 240px;
+    background-color: black;
+    padding: 0px 15px;
+    font-size: .7rem;
+}
+
+
+.forth-Topwatchlist-button{
+    position: absolute;
+    display: none;
+    left: 850px;
+    margin-top: -230px;
+    background-color:  rgb(226, 21, 55);
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    transition: opacity 0.5s ease;
+}
+
+
+.forth-Topview-button{
+    position: absolute;
+    display: none;
+    left: 850px;
+    margin-top: -185px;
+    background-color:  rgb(226, 21, 55);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+}
+
+.forth-Topmovie:hover .forth-Topwatchlist-button {
+    display: block;
+}
+
+.forth-Topwatchlist-button:hover{
+    color: black;
+}
+.forth-Topview-button:hover{
+    color: black;
+}
+.forth-Topmovie:hover .forth-Topview-button{
+    display: block;
+}
+.forth-Topmovie:hover .forth-Topmovie-title{
+    color: yellow;
+}
+
+/*Fifth letter styles*/
+
+.fifth-Topimg-section-path{
+    position: relative;
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.fifth-Topmovie-title{
+    color: white;
+    position: absolute;
+    left: 1050px;
+    margin-top: 210px;
+    background-color: black;
+    padding: 0px 8px;
+    font-size: .9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   
+}
+
+.fifth-Topmovie-rating{
+    color: white;
+    position: absolute;
+    left: 1050px;
+    margin-top: 240px;
+    background-color: black;
+    padding: 0px 15px;
+    font-size: .7rem;
+}
+
+
+.fifth-Topwatchlist-button{
+    position: absolute;
+    display: none;
+    left: 1070px;
+    margin-top: -230px;
+    background-color:  rgb(226, 21, 55);
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    transition: opacity 0.5s ease;
+}
+
+
+.fifth-Topview-button{
+    position: absolute;
+    display: none;
+    left: 1070px;
+    margin-top: -185px;
+    background-color:  rgb(226, 21, 55);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+}
+
+.fifth-Topmovie:hover .fifth-Topwatchlist-button {
+    display: block;
+}
+
+.fifth-Topwatchlist-button:hover{
+    color: black;
+}
+.fifth-Topview-button:hover{
+    color: black;
+}
+.fifth-Topmovie:hover .fifth-Topview-button{
+    display: block;
+}
+.fifth-Topmovie:hover .fifth-Topmovie-title{
+    color: yellow;
+}
+
+
+/*Advanced Version Coding Styles*/
+
+.Top-img-section-path{
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.topMovie{
+    position: relative;
+}
+
+.Top-watchlist-button{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    left: 50px;
+    margin-top: -220px;
+    background-color:  rgb(226, 21, 55);
+    color: white;
+    padding: 10px;                                                                              
+    border: none;
+    outline: none;
+}
+.Top-view-button{
+    position: absolute;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    left: 50px;
+    margin-top: -175px;
+    background-color:  rgb(226, 21, 55);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+}
+
+.topMovie-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 30px 120px;
+    margin-top: 0;
+}
+.movie-ratings{
+    display: flex;
+    flex-direction: column;
+}
+
+.Top-movie-title{
+    color: white;
+    position: absolute;
+    left: 4px;
+    background-color: black;
+    padding: 0px 15px;
+    top: 210px;
+    font-size: .9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 170px;
+}
+.Top-movie-rating{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    position: absolute;
+    left: 4px;
+    top: 240px;
+    background-color: black;
+    padding: 0px 15px;
+    font-size: .7rem;
+}
+
+.movie-info{
+    display: none;
+}
+
+.topMovie:hover .movie-info{
+    display: block;
+}
+
+.Top-watchlist-button:hover{
+    color: black;
+}
+.Top-view-button:hover{
+    color: black;
+}
+
+.topMovie:hover .Top-movie-title{
+    color: yellow;
+    width: 190px;
+}

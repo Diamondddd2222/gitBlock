@@ -6,6 +6,8 @@ import Home from './Pages/Home/Home'
 import Popular from './Pages/Popular/Popular'
 import TopRatedPage from './Pages/TopRatedPage/TopRatedPage'
 import ComingSoonPage from './Pages/ComingSoonPage/ComingSoonPage'
+import MoreDetailsPage from './Pages/MoreDetailsPage/MoreDetailsPage'
+import WatchList from './Pages/WatchListPage/WatchList'
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
              <Route path='Home/Popular' element={<Popular/>}/>  
              <Route path='Home/TopRatedPage' element={<TopRatedPage/>}/>
              <Route path='Home/ComingSoonPage' element={<ComingSoonPage/>}/>
+             <Route path='/movie/:id' element={<MoreDetailsPage/>}/>
+             <Route path='/watchList/:id' element={<WatchList/>}/>
           </Route>
         </Routes>
       </BrowserRouter>

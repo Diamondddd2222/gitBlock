@@ -9,6 +9,9 @@ import { FaHeart, FaStar } from "react-icons/fa";
 import { FaPlay } from "react-icons/fa6";
 import { sliderSettings } from '../../utils/common'
 import { SlArrowLeft, SlArrowRight} from "react-icons/sl";
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
+
 
 
 const HeroSection = () => {
@@ -43,8 +46,36 @@ const HeroSection = () => {
     
      fetchMovies();
     },[]); 
+
+    // Generate link for Movie trailer 
+   const playTrailer = ({original_title}) => {
+    if (!original_title){
+      console.error("No title found for this movie.")
+      return;
+    }
+      const query = encodeURIComponent(`${original_title} official trailer`);
+      const youtubeUrl = `https://www.youtube.com/results?search_query=${query}`;
+      window.open(youtubeUrl, "_blank");
+   }
    
   
+   // Function to display Seen More Movies in the MoreDetailsPage
+   const navigate = useNavigate();
+
+    const handleMoviesClicked= (id) => {
+       navigate(`/movie/${id}`);
+    };
+ 
+
+    // Function to add Movie to WatchList
+
+    const watchListNavigate = useNavigate();
+
+     const handleAddToWatchList = (id) =>{
+       watchListNavigate(`/watchList/${id}`) 
+     }
+
+
     return (
         <div className="hero-section">
             
@@ -62,13 +93,13 @@ const HeroSection = () => {
 
      <div className="movie-buttons">
       <div className="watchList">
-       <button className="add-to-watchList-button"><FaHeart className='watchList-icon' size={15} /> </button>
+       <button  className="add-to-watchList-button"><FaHeart onClick={()=> handleAddToWatchList(movie.id) } className='watchList-icon' size={15} /> </button>
        <h3 className='watchList-text'>ADD TO WATCHLIST</h3>
       </div>
        
       <div className="watch-trailer">
-       <button className="watch-trailer-button" ><FaPlay className='watch-trailer-icon' size={15} /></button>
-       <h3 className="watch-trailer-text">WATCH TRAILER</h3>
+       <button className="watch-trailer-button"><FaPlay onClick={()=>playTrailer(movie)} className='watch-trailer-icon' size={15} /></button>
+       <h3 className="watch-trailer-text" >WATCH TRAILER</h3>
       </div>  
      </div>
 
@@ -77,14 +108,16 @@ const HeroSection = () => {
         <span className='rating1st'>Rating:For all</span>
         <span  className='rating1st'>Release: {movie.release_date}</span>
      </div>
-
-     <button className="See-More">See More</button>
+   
+     <button onClick={()=>handleMoviesClicked(movie.id) } className="See-More">See More</button>
+  
+     
    </div>
 {/*end of left container */}
 
 {/*Right Container */}
    <div className="image-container">
-     <img src={`${IMAGE_BASE_URL}${movie.backdrop_path}`} alt="" className='img_path' />
+     <img src={`${IMAGE_BASE_URL}${movie.poster_path}`} alt="" className='img_path' />
    </div>
  
 </div>
@@ -111,11 +144,11 @@ const SliderButton =() => {
     <div className='slide-button'>
    
         <div className="r-buttons2">
-         <button className='prev' onClick={()=> swiper.slidePrev()}><SlArrowLeft  size={40}/></button>
+         <button className='prev' onClick={()=> swiper.slidePrev()}><SlArrowLeft size={25}  /></button>
         </div>
 
         <div className="r-buttons1">
-         <button className='next' onClick={()=> swiper.slideNext()}><SlArrowRight  size={40}/></button>
+         <button className='next' onClick={()=> swiper.slideNext()}><SlArrowRight size={25}/></button>
         </div>
         
         
