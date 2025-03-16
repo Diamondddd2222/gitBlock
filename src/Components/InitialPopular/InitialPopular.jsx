@@ -16,7 +16,7 @@ const InitialPopular = () => {
 useEffect(()=>{
         fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`)
         .then((response) => response.json())
-        .then((data)=> setMovies(data.results.slice(0, 5)))
+        .then((data)=> setMovies(data.results.slice(0, 6)))
 
     }, []);
   
@@ -38,8 +38,8 @@ useEffect(()=>{
     return (
       <div className='popular-content'>
         <div className='popular-container'>
-          <h3 className='popular-Text'>#Popular Now🔥</h3>
-          <Link to='/Home/Popular' className='popular-navigator'>VIEW ALL <SlArrowRight size={7}/></Link>
+          <h3 className='popular-Text'>#Popular 🔥</h3>
+          <Link to='/Popular' className='popular-navigator'>VIEW ALL <SlArrowRight size={7}/></Link>
         </div>
        
        <div className="popular-section">
@@ -47,7 +47,7 @@ useEffect(()=>{
           <div key={movie.id} className="PopularMovie">
              <img src={`${IMAGE_BASE_URL}${movie.poster_path}`} alt="" className='Popular-img-section-path' />
              <div className="Popular-movie-info">
-               <button className='Popular-watchlist-button'><FaPlus size={8}/>WatchList</button>
+               <button className='Popular-watchlist-button'><FaPlus size={10}/>WatchList</button>
                <button onClick={()=> playTrailer(movie)} className='Popular-view-button'><FaRegEye size={10} />  View</button>
              </div>
   

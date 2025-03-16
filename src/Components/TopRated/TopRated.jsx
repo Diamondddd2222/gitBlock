@@ -16,7 +16,7 @@ const TopRated = () => {
   useEffect(()=>{
     fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}`)
     .then((response) => response.json())
-    .then((data)=> setMovies(data.results.slice(0,5)));
+    .then((data)=> setMovies(data.results.slice(0,6)));
 
   }, []);
 
@@ -36,7 +36,7 @@ const TopRated = () => {
     <div className='topMovie-container'>
       <div className='TopMovieText-container'>
         <h3 className='TopMovie-Text'>#Top Rated🔥</h3>
-        <Link to='/Home/TopRatedPage' className='popular-navigator'>VIEW ALL <SlArrowRight size={7}/></Link>
+        <Link to='/TopRatedPage' className='popular-navigator'>VIEW ALL <SlArrowRight size={7}/></Link>
       </div>
      
      <div className="topMovie-section">

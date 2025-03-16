@@ -27,10 +27,11 @@ const playTrailer= (VideoId)  =>{
 const settings = {
   vertical:true,
   verticalSwiping: true,
-  slidesToshow: 4,
-  arrows: true,
-  infinite: false,
-  autoplay: false,
+  slidesToshow: 2,
+  slidesToScroll:1,
+  arrows: false,
+  infinite: true,
+  autoplay: true,
 }
 
 
@@ -46,6 +47,7 @@ const settings = {
         {trailerUrl && <iframe
                          width="60%"
                          height='350px' 
+                         className='iframe'
                          src={trailerUrl}
                          title='Youtube video player'
                          frameBorder="1"

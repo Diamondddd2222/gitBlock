@@ -34,7 +34,7 @@ useEffect(()=>{
     return (
       <div className='popular-content'>
         <div className='popular-container'>
-          <h3 className='popular-Text'>#Popular Now🔥</h3>
+          <h3 className='popular-Text'>#Popular 🔥</h3>
           
         </div>
        

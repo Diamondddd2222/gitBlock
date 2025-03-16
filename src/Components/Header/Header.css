@@ -1,10 +1,7 @@
 .header-container{
-    position: sticky;
-    top: 0;
-    left: 0;
+    position: relative;
     font-family: rubik;
-    padding: 20px 110px;
-    background: linear-gradient(to bottom, rgba(4, 21, 60, .644), rgba(3, 0, 15, .922)),url("https://extraordinary-babka-b95ae3.netlify.app/banner.jpg");
+    background: linear-gradient(to bottom, rgba(4, 21, 60, .644), rgba(3, 0, 15, .922)),url("/banner.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,10 +18,11 @@
 }
 
 .logo-container{
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 2000;
+    padding: 20px 110px;
 }
 
 .logo-title .small-font{
@@ -38,7 +36,12 @@
     display: flex;
     align-items: center;
     font-size: .8rem;
+    z-index: 1000;
 }
+.hamburger-bottom{
+    z-index: 1000;
+}
+
 .logo{
     color: rgb(226, 21, 55);
     width: 75px;
@@ -58,8 +61,29 @@
 }
 
 /*Media query for HEADER*/
-@media screen and (max-width:900px){
-    .header-container{
-        padding: 20px 60px;
+@media screen and (max-width:800px){
+   .logo-container{
+    padding: 0px 20px;
+   }
+
+   .logo{
+    color: rgb(226, 21, 55);
+    width: 50px;
+    height: 60px;
+    font-size: 75px;
+   }
+   
+   .logo-text{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    z-index: 1000;
+    }
+    
+
+    .logo-title .small-font{
+        font-size: 9px;
+        font-weight: 400;
+        color: white;
     }
 }

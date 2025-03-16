@@ -144,11 +144,11 @@ const SliderButton =() => {
     <div className='slide-button'>
    
         <div className="r-buttons2">
-         <button className='prev' onClick={()=> swiper.slidePrev()}><SlArrowLeft size={25}  /></button>
+         <button className='prev' onClick={()=> swiper.slidePrev()}><SlArrowLeft  /></button>
         </div>
 
         <div className="r-buttons1">
-         <button className='next' onClick={()=> swiper.slideNext()}><SlArrowRight size={25}/></button>
+         <button className='next' onClick={()=> swiper.slideNext()}><SlArrowRight /></button>
         </div>
         
         

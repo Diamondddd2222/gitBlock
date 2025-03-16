@@ -46,6 +46,102 @@
 
 
 .slider{
-    width: 350px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Media query*/
+@media screen and (max-width:800px){
+    .theater-content{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0, 0, 20);
+        max-width: 100vw;
+    }
+
+    .theater-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 20px;
+    }
+
+    .theater-section{
+        max-width: 100vw;
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        
+        gap: .7rem;
+    }
+    .movieList-Text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+        padding-left: 20px;
+    }
+  
+
+    .iframe{
+        width: 100%;
+    }
+
+    .PopularMovie{
+        position: relative;
+       
+    }
+
+    
+
+    .theater-Text{
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        max-width: 250px;
+        white-space: break-spaces;
+    }
+    
+    .popular-navigator{
+        text-decoration: none;
+        color: white;
+        font-weight: 100;
+        font-size: 0.7rem;
+    }
+
+
+    .comingSoon-movie-title{
+        color: white;
+        position: absolute;
+        left: -6px;
+        background-color: black;
+        padding: 0px 15px;
+        top: 110px;
+        font-size: .7rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 70px;
+    }
+    
+    .comingSoon-movie-rating{
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        position: absolute;
+        left: -6px;
+        top: 130px;
+        background-color: black;
+        padding: 0px 15px;
+        font-size: .6rem;
+    }
+
+    .comingSoonMovie:hover .comingSoon-movie-title{
+        color: yellow;
+        width: 70px;
+    }
+    
 }

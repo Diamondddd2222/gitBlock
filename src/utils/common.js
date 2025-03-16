@@ -1,5 +1,5 @@
 export const sliderSettings= {
-   spaceBetween:10,
+   spaceBetween:50,
    slidesPerView:1,
    navigation:true,
    pagination:{clickable: true},

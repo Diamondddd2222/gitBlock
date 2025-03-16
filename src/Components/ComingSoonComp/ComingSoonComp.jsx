@@ -14,7 +14,7 @@ const ComingSoonComp = () => {
     useEffect(()=>{
         fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}`)
         .then((response) => response.json())
-        .then((data)=> setMovies(data.results.slice(0, 5)))
+        .then((data)=> setMovies(data.results.slice(0, 6)))
 
     }, []);
 
@@ -34,7 +34,7 @@ const ComingSoonComp = () => {
         <div className='comingSoon-container'>
           <div className='comingSoonText-container'>
             <h3 className='comingSoon-Text'>#Coming Soon To Cinemas🔥</h3>
-            <Link to='/Home/ComingSoonPage' className='popular-navigator'>VIEW ALL <SlArrowRight size={7}/></Link>
+            <Link to='/ComingSoonPage' className='popular-navigator'>VIEW ALL <SlArrowRight size={7}/></Link>
           </div>
          
          <div className="comingSoon-section">
